@@ -1,5 +1,10 @@
 .hamburger__wrapper {
-    margin: 1.25em;
+    display: grid;
+    place-items: center;
+    margin: 1.5em;
+    padding: 1em;
+    background: transparent;
+    border: none;
 
     svg {
         margin: auto;

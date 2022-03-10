@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -9,16 +9,21 @@ import DestinationsPage from './Pages/Destinations-page/DestinationsPage.comonen
 import CrewPage from './Pages/Crew-page/CrewPage.component';
 import TechnologyPage from './Pages/Technology-page/TechnologyPage.component';
 
-import MenuState from './Components/MenuContext.component';
+import Menu from './Components/Menu/Menu.component';
+
+import MenuContext from './Components/Context/MenuContext.component';
 
 function App() {
 
-  const [menu, setMenu] = useState(false);
+  const [currentMenuState, setMenuState] = useState(false);
+  console.log(currentMenuState);
   
   return (
-    <MenuState.Provider setter={setMenu} value={menu}>
+    <MenuContext.Provider value={{currentMenuState, setMenuState}}>
       <Router>
         <div className="App">
+
+          {currentMenuState && window.screen.width < 768 ? <Menu/> : null}
 
           <Routes>
             <Route exact path="/" element={<HomePage/>}/>
@@ -30,7 +35,7 @@ function App() {
 
         </div>
       </Router>
-    </MenuState.Provider>
+    </MenuContext.Provider>
   );
 }
 
