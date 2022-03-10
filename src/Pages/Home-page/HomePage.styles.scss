@@ -1,0 +1,55 @@
+#home__page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+
+    @media only screen and (min-width: 280px) {
+        background: url('../../Assets/home/background-home-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 5vh;
+    }
+
+    @media only screen and (min-width: 767px) {
+        background: url('../../Assets/home/background-home-tablet.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 5vh;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        background: url('../../Assets/home/background-home-desktop.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width: 1440px) {}
+
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 10vh 0;
+
+        @media only screen and (max-width: 1024px) {
+            margin: auto;
+            text-align: center;
+            flex-direction: column;
+
+            gap: 5vh;
+        }
+    }
+}

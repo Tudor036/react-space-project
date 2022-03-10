@@ -1,0 +1,105 @@
+.App {
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+
+    width: 100vh;
+    overflow-x: hidden;
+
+    user-select: none;
+}
+
+/* MOBILE */
+@media only screen and (min-width: 320px) {
+
+    .App {
+        width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 767px) {
+
+    .App {
+        width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+    .App {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
+/* UTILITY CLASSES */
+.heading-1 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-size: 150px;
+    margin: 0;
+}
+
+.heading-2 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 0;
+}
+
+.heading-3 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-size: 56px;
+    margin: 0;
+}
+
+.heading-4 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.heading-5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4.75px;
+    font-size: 28px;
+}
+
+.sub-heading-1 {
+    font-family: 'Bellfair', serif;
+    font-size: 28px;
+}
+
+.sub-heading-1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+
+.nav-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.dark-blue {
+    color: #0b0d17;
+}
+
+.desaturated-blue {
+    color: #d0d6f9;
+}

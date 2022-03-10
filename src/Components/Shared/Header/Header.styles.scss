@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    padding: 4vh;
+
+    .line {
+        position: absolute;
+        left: 10vw;
+        width: 40vw;
+        height: .2px;
+        background-color: grey;
+        z-index: 100;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+}
