@@ -6,7 +6,7 @@ import Header from "../../Components/Shared/Header/Header.component";
 const DestinationsPage = () => {
     return (
         <div id="destinations__page">
-            <Header />
+            <Header active="destinations" />
             <h1>Destinations Page</h1>
         </div>
     )
