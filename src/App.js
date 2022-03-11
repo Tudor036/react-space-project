@@ -16,21 +16,20 @@ import MenuContext from './Components/Context/MenuContext.component';
 function App() {
 
   const [currentMenuState, setMenuState] = useState(false);
-  console.log(currentMenuState);
-  
+
   return (
-    <MenuContext.Provider value={{currentMenuState, setMenuState}}>
+    <MenuContext.Provider value={{ currentMenuState, setMenuState }}>
       <Router>
         <div className="App">
 
-          {currentMenuState && window.screen.width < 768 ? <Menu/> : null}
+          {currentMenuState && window.screen.width < 768 ? <Menu /> : null}
 
           <Routes>
-            <Route exact path="/" element={<HomePage/>}/>
-            <Route exact path="/home" element={<HomePage/>}/>
-            <Route path='/destinations' element={<DestinationsPage/>}/>
-            <Route path='/crew' element={<CrewPage/>}/>
-            <Route path='/technology' element={<TechnologyPage/>}/>
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/home" element={<HomePage />} />
+            <Route path='/destinations' element={<DestinationsPage />} />
+            <Route path='/crew' element={<CrewPage />} />
+            <Route path='/technology' element={<TechnologyPage />} />
           </Routes>
 
         </div>

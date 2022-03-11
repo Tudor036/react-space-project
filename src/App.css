@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
 .App {
     color: aliceblue;
     display: grid;
@@ -79,12 +81,14 @@
 .sub-heading-1 {
     font-family: 'Bellfair', serif;
     font-size: 28px;
+    text-transform: uppercase;
 }
 
-.sub-heading-1 {
+.sub-heading-2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;
     letter-spacing: 2.35px;
+    text-transform: uppercase;
 }
 
 .nav-text {
