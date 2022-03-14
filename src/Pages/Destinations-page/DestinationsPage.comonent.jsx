@@ -9,6 +9,7 @@ const DestinationsPage = () => {
     return (
         <div id="destinations__page">
             <Header active="destinations" />
+            <p className="heading-5"><b>01</b> Pick your destination</p>
             <Content />
         </div>
     )

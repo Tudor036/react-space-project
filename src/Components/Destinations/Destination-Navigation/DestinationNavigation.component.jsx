@@ -7,8 +7,7 @@ import DestinationContext from "../../Context/DestinationContext.conmponent";
 
 const DestinationNavigation = () => {
 
-    const { setCurrentDestination } = useContext(DestinationContext);
-
+    const { setCurrentDestination, activeDestination } = useContext(DestinationContext);
     const planets = data.destinations.map(obj => obj.name);
 
     return (
@@ -18,7 +17,7 @@ const DestinationNavigation = () => {
                     <button
                         key={index}
                         onClick={() => setCurrentDestination(dest.toLowerCase())}
-                        className={`nav-text`}
+                        className={`nav-text btn ${activeDestination.name.toLowerCase() === dest.toLowerCase() ? "active" : ""}`}
                     >{dest}</button>
                 )
             })}

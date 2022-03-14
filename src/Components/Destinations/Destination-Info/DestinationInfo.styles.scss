@@ -1,0 +1,13 @@
+.destination__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 1vh;
+
+    color: #d0d6f9;
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 40vw;
+    }
+}

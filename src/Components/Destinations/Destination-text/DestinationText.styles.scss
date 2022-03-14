@@ -1,0 +1,58 @@
+.destination__text {
+    margin: 0 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 350px;
+    
+    @media only screen and (max-width: 1024px) {
+        text-align: center;
+    }
+
+    .heading-2 {
+        color: white;
+
+        @media only screen and (max-width: 1024px) {
+            font-size: 75px;
+            margin: .5em auto;
+        }
+
+    }
+    @media only screen and (max-width: 1024px) {
+        width: 70vw;
+    }
+    
+
+    .body-text {
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    
+    .info__text {
+        font-family: 'Barlow', serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+        width: 100%;
+
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        .average__distance,
+        .travel__time {
+            
+            .sub-heading-1 {
+                color: white;
+                font-family: 'Bellefair', serif;
+            }
+            
+        }
+
+    }
+}

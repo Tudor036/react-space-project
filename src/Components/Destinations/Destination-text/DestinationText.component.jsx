@@ -11,14 +11,16 @@ const DestinationText = () => {
     return (
         <div className="destination__text">
             <p className="heading-2">{activeDestination.name}</p>
-            <p>{activeDestination.description}</p>
-            <div className="average__distance">
-                <p className="sub-heading-2">Avg. distance</p>
-                <p className="sub-heading-1">{activeDestination.distance}</p>
-            </div>
-            <div className="travel__time">
-                <p className="sub-heading-2">est. travel time</p>
-                <p className="sub-heading-1">{activeDestination.travel}</p>
+            <p className="body-text">{activeDestination.description}</p>
+            <div className="info__text">
+                <div className="average__distance">
+                    <p className="sub-heading-2">Avg. distance</p>
+                    <p className="sub-heading-1">{activeDestination.distance}</p>
+                </div>
+                <div className="travel__time">
+                    <p className="sub-heading-2">est. travel time</p>
+                    <p className="sub-heading-1">{activeDestination.travel}</p>
+                </div>
             </div>
         </div>
     )
