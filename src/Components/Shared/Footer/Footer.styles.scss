@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+    background-color: #0b0d197a;
+    backdrop-filter: blur(10px);
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    a {
+        color: #2F85EA;
+        text-decoration: none;
+    }
+
+    animation: credentials 3000ms ease-in-out 5000ms 1 forwards;
+
+    @keyframes credentials {
+        0% {
+            bottom: 0;
+        }
+        100% {
+            bottom: -8em;
+        }
+    }
+
+    width: 100%;
+    padding: 2em 0;
+}

@@ -28,7 +28,12 @@
     .body-text {
         line-height: 32px;
         margin: 0;
-        margin-bottom: 1em;
+        padding-bottom: 1.5em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.25);
+
+        @media only screen and (max-width: 767px) {
+            font-size: 4vw;
+        }
     }
     
     .info__text {
@@ -37,6 +42,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+        padding-top: .5em;
 
         width: 100%;
 

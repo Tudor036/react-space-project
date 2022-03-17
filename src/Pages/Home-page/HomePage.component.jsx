@@ -4,6 +4,7 @@ import './HomePage.styles.scss'
 import Header from "../../Components/Shared/Header/Header.component";
 import ActionButton from "../../Components/Home/Action-Button/ActionButton.component";
 import TextContent from "../../Components/Home/Text-Content/TextContent.components";
+import Footer from "../../Components/Shared/Footer/Footer.component";
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <TextContent />
                 <ActionButton />
             </div>
+            <Footer />
         </div>
     )
 }

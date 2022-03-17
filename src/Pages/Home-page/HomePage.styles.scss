@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media only screen and (min-width: 280px) {
         background: url('../../Assets/home/background-home-mobile.jpg') no-repeat center center fixed;
@@ -33,8 +33,6 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-
-        margin: 10vh 0;
 
         @media only screen and (max-width: 1024px) {
             margin: auto;
