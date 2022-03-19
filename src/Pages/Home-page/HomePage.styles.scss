@@ -34,6 +34,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        justify-self: center;
+        margin: 5vh 0;
 
         @media only screen and (max-width: 1024px) {
             margin: auto;
