@@ -1,14 +1,14 @@
 .crew__menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1em;
 
-    max-width: 100px;
+    max-width: 50vw;
     margin: 0 auto;
 
     @media only screen and (min-width: 1023px) {
-        margin: 2em 0;
+        margin: 2em 5vw;
         margin-right: auto;
     }
 

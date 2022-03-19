@@ -1,7 +1,7 @@
 .crew__text {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    width: 40vw;
     
     @media only screen and (max-width: 1024px) {
         text-align: center;
@@ -12,5 +12,9 @@
     .heading-4 {
         color: gray;
         margin-bottom: 10px;
+    }
+
+    .body-text {
+        line-height: 2em;
     }
 }
