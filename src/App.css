@@ -1,44 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
-.App {
-    color: aliceblue;
-    display: grid;
-    place-items: center;
-
-    width: 100vh;
-    overflow-x: hidden;
-
-    user-select: none;
-    position: relative;
-}
-
-/* MOBILE */
-@media only screen and (min-width: 280px) {
-
-    .App {
-        width: 100vw;
-        min-height: 100vh;
-    }
-}
-
-/* TABLET */
-@media only screen and (min-width: 767px) {
-
-    .App {
-        width: 100vw;
-        min-height: 100vh;
-    }
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 1024px) {
-
-    .App {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-}
 
 
 /* UTILITY CLASSES */
@@ -95,10 +56,14 @@
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     letter-spacing: 2.7px;
-
+    
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+.body-text {
+    color: #d0d6f9;
 }
 
 .dark-blue {
@@ -107,4 +72,121 @@
 
 .desaturated-blue {
     color: #d0d6f9;
+}
+
+.App {
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+
+    width: 100vh;
+    overflow-x: hidden;
+
+    user-select: none;
+    position: relative;
+}
+
+b {
+    color: gray;
+}
+
+/* MOBILE */
+@media only screen and (min-width: 280px) {
+
+    .App {
+        width: 100vw;
+        min-height: 100vh;
+        font-size: 15px;
+    }
+
+    .heading-1 {
+        font-size: 70px;
+    }
+
+    .heading-2 {
+        font-size: 56px;
+    }
+
+    .heading-3 {
+        font-size: 24px;
+    }
+
+    .heading-4 {
+        font-size: 16px;
+    }
+
+    .heading-5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .sub-heading-1 {
+        font-size: 28px;
+    }
+
+    .sub-heading-2 {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+
+    .nav-text {
+        font-size: 14px;
+        letter-spacing: 2.7px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 767px) {
+
+    .App {
+        width: 100vw;
+        min-height: 100vh;
+        font-size: 16px;
+    }
+
+    .heading-1 {
+        font-size: 100px;
+    }
+
+    .heading-2 {
+        font-size: 80px;
+    }
+
+    .heading-3 {
+        font-size: 40px;
+    }
+
+    .heading-4 {
+        font-size: 24px;
+    }
+
+    .heading-5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .sub-heading-1 {
+        font-size: 28px;
+    }
+
+    .sub-heading-2 {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+
+    .nav-text {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+    .App {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 18px;
+    }
 }

@@ -1,0 +1,23 @@
+.crew__image {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    min-width: 40vw;
+    
+    @media only screen and (max-width: 1024px) {
+        border-bottom: 1px gray solid;
+        margin: 0 auto;
+    }
+    
+    img {
+        height: 70vh;
+        max-height: min-content;
+
+        @media only screen and (max-width: 1024px) {
+            height: auto;
+            width: 45vw;
+            margin: auto;
+            margin-top: 2em;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 #home__page {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
+    gap: 5vh;
     overflow: hidden;
 
     @media only screen and (min-width: 280px) {

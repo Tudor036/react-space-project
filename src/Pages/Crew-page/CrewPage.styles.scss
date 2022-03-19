@@ -1,9 +1,23 @@
 #crew__page {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    // gap: 5vh;
+    width: 100vw;
+
+    .heading-5 {
+        padding-left: 10vw;
+        margin: 0;
+        
+
+        @media only screen and (max-width: 768px) {
+            font-size: 5vw;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
 
     @media only screen and (min-width: 280px) {
         background: url('../../Assets/crew/background-crew-mobile.jpg') no-repeat center center fixed;
@@ -21,10 +35,8 @@
     @media only screen and (min-width: 1024px) {
         background: url('../../Assets/crew/background-crew-desktop.jpg') no-repeat center center fixed;
         background-size: cover;
-        height: 100%;
+        height: 100vh;
     }
-
-    @media only screen and (min-width: 1440px) {}
 
     background-clip: border-box;
     background-repeat: no-repeat;
