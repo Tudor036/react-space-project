@@ -1,6 +1,6 @@
 import React from "react";
 
-import './TechnologyPage.styles.scss'
+import './TechnologyPage.styles.scss';
 import Header from "../../Components/Shared/Header/Header.component";
 
 const TechnologyPage = () => {
