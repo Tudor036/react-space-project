@@ -1,1 +1,0 @@
-import * as destinationImages from '../../Assets/destination'

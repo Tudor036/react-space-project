@@ -64,6 +64,7 @@
 
 .body-text {
     color: #d0d6f9;
+    line-height: 28px;
 }
 
 .dark-blue {
@@ -91,7 +92,7 @@ b {
 }
 
 /* MOBILE */
-@media only screen and (min-width: 280px) {
+@media only screen and (max-width: 767px) {
 
     .App {
         width: 100vw;
@@ -136,7 +137,7 @@ b {
 }
 
 /* TABLET */
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 1024px) {
 
     .App {
         width: 100vw;
