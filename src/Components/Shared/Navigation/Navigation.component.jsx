@@ -7,7 +7,7 @@ import data from '../../../Assets/data.json';
 
 const Navigation = ({ active }) => {
 
-    const [sections, setSections] = useState(['home', ...Object.keys(data)]);
+    const [sections] = useState(['home', ...Object.keys(data)]);
 
     return (
         <nav>
