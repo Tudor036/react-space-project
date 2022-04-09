@@ -6,7 +6,7 @@ import data from '../../Assets/data.json';
 import MenuContext from "../Context/MenuContext.component";
 import CloseButton from "../Shared/Close-btn/CloseButton.conponent";
 
-const Menu = () => {
+const Menu = ({ active }) => {
 
     const { currentMenuState, setMenuState } = useContext(MenuContext);
     const [sections, setSections] = useState(['home', ...Object.keys(data)]);
